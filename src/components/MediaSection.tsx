@@ -41,45 +41,45 @@ const MediaSection = () => {
   ];
 
   return (
-    <section id="media" className="py-20 bg-white">
-      <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl lg:text-5xl font-bold text-[#1e3a8a] mb-4">
+    <section id="media" className="py-16 sm:py-20 bg-white">
+      <div className="container mx-auto px-4 sm:px-6">
+        <div className="text-center mb-12 sm:mb-16">
+          <h2 className="text-2xl sm:text-3xl lg:text-5xl font-bold text-[#1e3a8a] mb-4">
             Media Center
           </h2>
-          <p className="text-xl text-slate-600 max-w-3xl mx-auto">
+          <p className="text-lg sm:text-xl text-slate-600 max-w-3xl mx-auto px-4">
             Stay updated with our latest news, announcements, and insights from our investment activities
           </p>
         </div>
 
         {/* News Section */}
-        <div className="mb-16">
-          <h3 className="text-2xl font-bold text-[#1e3a8a] mb-8">Latest News</h3>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="mb-12 sm:mb-16">
+          <h3 className="text-xl sm:text-2xl font-bold text-[#1e3a8a] mb-6 sm:mb-8 text-center sm:text-left">Latest News</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {newsItems.map((item, index) => (
               <Card key={index} className="group hover:shadow-lg transition-shadow duration-300">
                 <div className="relative overflow-hidden">
                   <img 
                     src={item.image} 
                     alt={item.title}
-                    className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                    className="w-full h-40 sm:h-48 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
-                <CardHeader className="pb-3">
+                <CardHeader className="pb-3 px-4 sm:px-6">
                   <div className="flex items-center gap-2 text-sm text-slate-500 mb-2">
-                    <Calendar className="h-4 w-4" />
-                    {item.date}
+                    <Calendar className="h-4 w-4 flex-shrink-0" />
+                    <span className="text-xs sm:text-sm">{item.date}</span>
                   </div>
-                  <CardTitle className="text-lg font-bold text-[#1e3a8a] group-hover:text-[#1e40af] transition-colors">
+                  <CardTitle className="text-base sm:text-lg font-bold text-[#1e3a8a] group-hover:text-[#1e40af] transition-colors leading-tight">
                     {item.title}
                   </CardTitle>
                 </CardHeader>
-                <CardContent>
-                  <CardDescription className="text-slate-600 mb-4">
+                <CardContent className="px-4 sm:px-6">
+                  <CardDescription className="text-slate-600 mb-4 text-sm sm:text-base leading-relaxed">
                     {item.description}
                   </CardDescription>
-                  <Button variant="outline" size="sm" className="w-full border-[#1e3a8a] text-[#1e3a8a] hover:bg-[#1e3a8a] hover:text-white">
-                    <ExternalLink className="h-4 w-4 mr-2" />
+                  <Button variant="outline" size="sm" className="w-full border-[#1e3a8a] text-[#1e3a8a] hover:bg-[#1e3a8a] hover:text-white text-xs sm:text-sm">
+                    <ExternalLink className="h-3 w-3 sm:h-4 sm:w-4 mr-2" />
                     Read More
                   </Button>
                 </CardContent>
@@ -90,30 +90,30 @@ const MediaSection = () => {
 
         {/* Videos Section */}
         <div>
-          <h3 className="text-2xl font-bold text-[#1e3a8a] mb-8">Featured Videos</h3>
-          <div className="grid md:grid-cols-2 gap-8">
+          <h3 className="text-xl sm:text-2xl font-bold text-[#1e3a8a] mb-6 sm:mb-8 text-center sm:text-left">Featured Videos</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
             {videos.map((video, index) => (
               <Card key={index} className="group hover:shadow-lg transition-shadow duration-300">
                 <div className="relative overflow-hidden">
                   <img 
                     src={video.thumbnail} 
                     alt={video.title}
-                    className="w-full h-56 object-cover"
+                    className="w-full h-48 sm:h-56 object-cover"
                   />
                   <div className="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition-colors duration-300 flex items-center justify-center">
-                    <div className="bg-yellow-500/20 backdrop-blur-sm rounded-full p-4 group-hover:scale-110 transition-transform duration-300">
-                      <Play className="h-8 w-8 text-yellow-300" fill="currentColor" />
+                    <div className="bg-yellow-500/20 backdrop-blur-sm rounded-full p-3 sm:p-4 group-hover:scale-110 transition-transform duration-300">
+                      <Play className="h-6 w-6 sm:h-8 sm:w-8 text-yellow-300" fill="currentColor" />
                     </div>
                   </div>
-                  <div className="absolute bottom-4 right-4 bg-black/70 text-white px-2 py-1 rounded text-sm">
+                  <div className="absolute bottom-3 sm:bottom-4 right-3 sm:right-4 bg-black/70 text-white px-2 py-1 rounded text-xs sm:text-sm">
                     {video.duration}
                   </div>
                 </div>
-                <CardHeader>
-                  <CardTitle className="text-lg font-bold text-[#1e3a8a]">
+                <CardHeader className="px-4 sm:px-6">
+                  <CardTitle className="text-base sm:text-lg font-bold text-[#1e3a8a]">
                     {video.title}
                   </CardTitle>
-                  <CardDescription className="text-slate-600">
+                  <CardDescription className="text-slate-600 text-sm sm:text-base">
                     {video.description}
                   </CardDescription>
                 </CardHeader>
