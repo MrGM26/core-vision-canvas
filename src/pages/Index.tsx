@@ -68,7 +68,7 @@ const Index = () => {
       <Header />
       
       {/* Hero Section */}
-      <section id="about" className="relative bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800 text-white overflow-hidden">
+      <section id="about" className="relative bg-gradient-to-br from-[#1e3a8a] via-[#1e40af] to-[#1d4ed8] text-white overflow-hidden">
         {/* Background Image */}
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -77,13 +77,13 @@ const Index = () => {
           }}
         ></div>
         {/* Overlay for text readability */}
-        <div className="absolute inset-0 bg-gradient-to-br from-slate-900/80 via-blue-900/70 to-slate-800/80"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-[#1e3a8a]/80 via-[#1e40af]/70 to-[#1d4ed8]/80"></div>
         <div className="relative container mx-auto px-6 py-24 lg:py-32 z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-white to-blue-200 bg-clip-text text-transparent">
+            <h1 className="text-4xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-white to-yellow-200 bg-clip-text text-transparent">
               Who We Are
             </h1>
-            <div className="space-y-6 text-lg lg:text-xl text-blue-100">
+            <div className="space-y-6 text-lg lg:text-xl text-yellow-100">
               <p className="leading-relaxed">
                 We are a premier investment group specializing in strategic opportunities across critical global sectors. 
                 With decades of combined expertise and a proven track record of successful investments, we identify and 
@@ -97,7 +97,7 @@ const Index = () => {
             <div className="mt-10">
               <Button 
                 size="lg" 
-                className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-8 py-3 text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
+                className="bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-[#1e3a8a] px-8 py-3 text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
                 onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
               >
                 Partner With Us
@@ -111,7 +111,7 @@ const Index = () => {
       <section id="projects" className="py-20 bg-gradient-to-b from-slate-50 to-white">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-5xl font-bold text-slate-900 mb-4">
+            <h2 className="text-3xl lg:text-5xl font-bold text-[#1e3a8a] mb-4">
               Our Projects
             </h2>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto">
@@ -132,10 +132,10 @@ const Index = () => {
                 </div>
                 <CardHeader className="pb-3">
                   <div className="flex items-center gap-3 mb-2">
-                    <div className="p-2 rounded-lg bg-blue-100 group-hover:bg-blue-600 transition-colors duration-300">
-                      <project.icon className="h-6 w-6 text-blue-600 group-hover:text-white transition-colors duration-300" />
+                    <div className="p-2 rounded-lg bg-yellow-100 group-hover:bg-yellow-500 transition-colors duration-300">
+                      <project.icon className="h-6 w-6 text-yellow-600 group-hover:text-white transition-colors duration-300" />
                     </div>
-                    <CardTitle className="text-xl font-bold text-slate-900 group-hover:text-blue-900 transition-colors duration-300">
+                    <CardTitle className="text-xl font-bold text-[#1e3a8a] group-hover:text-[#1e40af] transition-colors duration-300">
                       {project.title}
                     </CardTitle>
                   </div>
@@ -155,14 +155,14 @@ const Index = () => {
       <MediaSection />
 
       {/* Contact Section */}
-      <section id="contact" className="py-20 bg-gradient-to-br from-slate-900 to-blue-900 text-white">
+      <section id="contact" className="py-20 bg-gradient-to-br from-[#1e3a8a] to-[#1e40af] text-white">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-3xl lg:text-5xl font-bold mb-4">
                 Contact Us
               </h2>
-              <p className="text-xl text-blue-200">
+              <p className="text-xl text-yellow-200">
                 Ready to explore partnership opportunities? We'd love to hear from you.
               </p>
             </div>
@@ -172,7 +172,7 @@ const Index = () => {
               <Card className="border-0 shadow-2xl bg-white/10 backdrop-blur-sm">
                 <CardHeader>
                   <CardTitle className="text-2xl font-bold text-white">Get In Touch</CardTitle>
-                  <CardDescription className="text-blue-200">
+                  <CardDescription className="text-yellow-200">
                     Send us a message and we'll respond within 24 hours
                   </CardDescription>
                 </CardHeader>
@@ -186,7 +186,7 @@ const Index = () => {
                           value={formData.name}
                           onChange={handleInputChange}
                           required
-                          className="bg-white/10 border-white/20 text-white placeholder:text-blue-200 focus:border-blue-400"
+                          className="bg-white/10 border-white/20 text-white placeholder:text-yellow-200 focus:border-yellow-400"
                         />
                       </div>
                       <div>
@@ -197,7 +197,7 @@ const Index = () => {
                           value={formData.email}
                           onChange={handleInputChange}
                           required
-                          className="bg-white/10 border-white/20 text-white placeholder:text-blue-200 focus:border-blue-400"
+                          className="bg-white/10 border-white/20 text-white placeholder:text-yellow-200 focus:border-yellow-400"
                         />
                       </div>
                     </div>
@@ -206,7 +206,7 @@ const Index = () => {
                       placeholder="Company/Organization"
                       value={formData.company}
                       onChange={handleInputChange}
-                      className="bg-white/10 border-white/20 text-white placeholder:text-blue-200 focus:border-blue-400"
+                      className="bg-white/10 border-white/20 text-white placeholder:text-yellow-200 focus:border-yellow-400"
                     />
                     <Textarea
                       name="message"
@@ -215,11 +215,11 @@ const Index = () => {
                       onChange={handleInputChange}
                       required
                       rows={5}
-                      className="bg-white/10 border-white/20 text-white placeholder:text-blue-200 focus:border-blue-400 resize-none"
+                      className="bg-white/10 border-white/20 text-white placeholder:text-yellow-200 focus:border-yellow-400 resize-none"
                     />
                     <Button 
                       type="submit" 
-                      className="w-full bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-semibold py-3 shadow-lg hover:shadow-xl transition-all duration-300"
+                      className="w-full bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-[#1e3a8a] font-semibold py-3 shadow-lg hover:shadow-xl transition-all duration-300"
                     >
                       Send Message
                     </Button>
@@ -233,30 +233,30 @@ const Index = () => {
                   <h3 className="text-2xl font-bold mb-6 text-white">Direct Contact</h3>
                   <div className="space-y-4">
                     <div className="flex items-center gap-4">
-                      <div className="p-3 rounded-lg bg-blue-600/20">
-                        <Mail className="h-6 w-6 text-blue-300" />
+                      <div className="p-3 rounded-lg bg-yellow-500/20">
+                        <Mail className="h-6 w-6 text-yellow-300" />
                       </div>
                       <div>
                         <p className="font-semibold text-white">Email</p>
-                        <p className="text-blue-200">partnerships@yourcompany.com</p>
+                        <p className="text-yellow-200">partnerships@yourcompany.com</p>
                       </div>
                     </div>
                     <div className="flex items-center gap-4">
-                      <div className="p-3 rounded-lg bg-blue-600/20">
-                        <Phone className="h-6 w-6 text-blue-300" />
+                      <div className="p-3 rounded-lg bg-yellow-500/20">
+                        <Phone className="h-6 w-6 text-yellow-300" />
                       </div>
                       <div>
                         <p className="font-semibold text-white">Phone</p>
-                        <p className="text-blue-200">+1 (555) 123-4567</p>
+                        <p className="text-yellow-200">+1 (555) 123-4567</p>
                       </div>
                     </div>
                     <div className="flex items-center gap-4">
-                      <div className="p-3 rounded-lg bg-blue-600/20">
-                        <MapPin className="h-6 w-6 text-blue-300" />
+                      <div className="p-3 rounded-lg bg-yellow-500/20">
+                        <MapPin className="h-6 w-6 text-yellow-300" />
                       </div>
                       <div>
                         <p className="font-semibold text-white">Location</p>
-                        <p className="text-blue-200">New York, NY</p>
+                        <p className="text-yellow-200">New York, NY</p>
                       </div>
                     </div>
                   </div>
@@ -264,7 +264,7 @@ const Index = () => {
 
                 <div className="p-6 rounded-lg bg-white/10 backdrop-blur-sm">
                   <h4 className="font-bold text-white mb-3">Investment Inquiries</h4>
-                  <p className="text-blue-200 leading-relaxed">
+                  <p className="text-yellow-200 leading-relaxed">
                     For partnership opportunities and investment discussions, please include details about 
                     your project scope, timeline, and funding requirements in your message.
                   </p>
@@ -276,7 +276,7 @@ const Index = () => {
       </section>
 
       {/* Footer */}
-      <footer className="bg-slate-900 text-white py-8">
+      <footer className="bg-[#1e3a8a] text-white py-8">
         <div className="container mx-auto px-6 text-center">
           <p className="text-slate-400">
             © 2024 Promax United Burkina Faso. All rights reserved. | Professional investment services across global markets.

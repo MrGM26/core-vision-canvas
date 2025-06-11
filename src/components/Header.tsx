@@ -12,38 +12,36 @@ const Header = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center space-x-3">
-            <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-blue-800 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-lg">P</span>
-            </div>
-            <div>
-              <h1 className="text-xl font-bold text-slate-900">Promax United</h1>
-              <p className="text-sm text-slate-600">Burkina Faso</p>
-            </div>
+            <img 
+              src="/lovable-uploads/196761c0-b662-49b1-8924-4f7320ac0c0b.png" 
+              alt="Promax United Burkina Faso" 
+              className="h-12 w-auto"
+            />
           </div>
 
           {/* Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
             <button 
               onClick={() => scrollToSection('about')}
-              className="text-slate-700 hover:text-blue-600 transition-colors font-medium"
+              className="text-slate-700 hover:text-[#1e3a8a] transition-colors font-medium"
             >
               About
             </button>
             <button 
               onClick={() => scrollToSection('projects')}
-              className="text-slate-700 hover:text-blue-600 transition-colors font-medium"
+              className="text-slate-700 hover:text-[#1e3a8a] transition-colors font-medium"
             >
               Projects
             </button>
             <button 
               onClick={() => scrollToSection('media')}
-              className="text-slate-700 hover:text-blue-600 transition-colors font-medium"
+              className="text-slate-700 hover:text-[#1e3a8a] transition-colors font-medium"
             >
               Media
             </button>
             <Button 
               onClick={() => scrollToSection('contact')}
-              className="bg-blue-600 hover:bg-blue-700"
+              className="bg-[#1e3a8a] hover:bg-[#1e40af] text-white"
             >
               Contact
             </Button>

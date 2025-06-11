@@ -44,7 +44,7 @@ const MediaSection = () => {
     <section id="media" className="py-20 bg-white">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-3xl lg:text-5xl font-bold text-slate-900 mb-4">
+          <h2 className="text-3xl lg:text-5xl font-bold text-[#1e3a8a] mb-4">
             Media Center
           </h2>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto">
@@ -54,7 +54,7 @@ const MediaSection = () => {
 
         {/* News Section */}
         <div className="mb-16">
-          <h3 className="text-2xl font-bold text-slate-900 mb-8">Latest News</h3>
+          <h3 className="text-2xl font-bold text-[#1e3a8a] mb-8">Latest News</h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {newsItems.map((item, index) => (
               <Card key={index} className="group hover:shadow-lg transition-shadow duration-300">
@@ -70,7 +70,7 @@ const MediaSection = () => {
                     <Calendar className="h-4 w-4" />
                     {item.date}
                   </div>
-                  <CardTitle className="text-lg font-bold text-slate-900 group-hover:text-blue-900 transition-colors">
+                  <CardTitle className="text-lg font-bold text-[#1e3a8a] group-hover:text-[#1e40af] transition-colors">
                     {item.title}
                   </CardTitle>
                 </CardHeader>
@@ -78,7 +78,7 @@ const MediaSection = () => {
                   <CardDescription className="text-slate-600 mb-4">
                     {item.description}
                   </CardDescription>
-                  <Button variant="outline" size="sm" className="w-full">
+                  <Button variant="outline" size="sm" className="w-full border-[#1e3a8a] text-[#1e3a8a] hover:bg-[#1e3a8a] hover:text-white">
                     <ExternalLink className="h-4 w-4 mr-2" />
                     Read More
                   </Button>
@@ -90,7 +90,7 @@ const MediaSection = () => {
 
         {/* Videos Section */}
         <div>
-          <h3 className="text-2xl font-bold text-slate-900 mb-8">Featured Videos</h3>
+          <h3 className="text-2xl font-bold text-[#1e3a8a] mb-8">Featured Videos</h3>
           <div className="grid md:grid-cols-2 gap-8">
             {videos.map((video, index) => (
               <Card key={index} className="group hover:shadow-lg transition-shadow duration-300">
@@ -101,8 +101,8 @@ const MediaSection = () => {
                     className="w-full h-56 object-cover"
                   />
                   <div className="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition-colors duration-300 flex items-center justify-center">
-                    <div className="bg-white/20 backdrop-blur-sm rounded-full p-4 group-hover:scale-110 transition-transform duration-300">
-                      <Play className="h-8 w-8 text-white" fill="white" />
+                    <div className="bg-yellow-500/20 backdrop-blur-sm rounded-full p-4 group-hover:scale-110 transition-transform duration-300">
+                      <Play className="h-8 w-8 text-yellow-300" fill="currentColor" />
                     </div>
                   </div>
                   <div className="absolute bottom-4 right-4 bg-black/70 text-white px-2 py-1 rounded text-sm">
@@ -110,7 +110,7 @@ const MediaSection = () => {
                   </div>
                 </div>
                 <CardHeader>
-                  <CardTitle className="text-lg font-bold text-slate-900">
+                  <CardTitle className="text-lg font-bold text-[#1e3a8a]">
                     {video.title}
                   </CardTitle>
                   <CardDescription className="text-slate-600">
