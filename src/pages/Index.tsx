@@ -1,4 +1,3 @@
-
 import { Shield, Mountain, Building, Bolt, Banknote, Mail, Phone, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -6,6 +5,8 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useState } from "react";
 import { toast } from "sonner";
+import Header from "@/components/Header";
+import MediaSection from "@/components/MediaSection";
 
 const Index = () => {
   const [formData, setFormData] = useState({
@@ -63,8 +64,10 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <Header />
+      
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800 text-white">
+      <section id="about" className="relative bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800 text-white">
         <div className="absolute inset-0 bg-black/20"></div>
         <div className="relative container mx-auto px-6 py-24 lg:py-32">
           <div className="max-w-4xl mx-auto text-center">
@@ -96,7 +99,7 @@ const Index = () => {
       </section>
 
       {/* Projects Section */}
-      <section className="py-20 bg-gradient-to-b from-slate-50 to-white">
+      <section id="projects" className="py-20 bg-gradient-to-b from-slate-50 to-white">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-5xl font-bold text-slate-900 mb-4">
@@ -138,6 +141,9 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      {/* Media Section */}
+      <MediaSection />
 
       {/* Contact Section */}
       <section id="contact" className="py-20 bg-gradient-to-br from-slate-900 to-blue-900 text-white">
@@ -264,7 +270,7 @@ const Index = () => {
       <footer className="bg-slate-900 text-white py-8">
         <div className="container mx-auto px-6 text-center">
           <p className="text-slate-400">
-            © 2024 Investment Group. All rights reserved. | Professional investment services across global markets.
+            © 2024 Promax United Burkina Faso. All rights reserved. | Professional investment services across global markets.
           </p>
         </div>
       </footer>
