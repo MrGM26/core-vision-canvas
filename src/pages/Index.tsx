@@ -1,3 +1,4 @@
+
 import { Shield, Mountain, Building, Bolt, Banknote, Mail, Phone, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -67,9 +68,17 @@ const Index = () => {
       <Header />
       
       {/* Hero Section */}
-      <section id="about" className="relative bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800 text-white">
-        <div className="absolute inset-0 bg-black/20"></div>
-        <div className="relative container mx-auto px-6 py-24 lg:py-32">
+      <section id="about" className="relative bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800 text-white overflow-hidden">
+        {/* Background Image */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: "url('https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=1200&h=800&fit=crop')"
+          }}
+        ></div>
+        {/* Overlay for text readability */}
+        <div className="absolute inset-0 bg-gradient-to-br from-slate-900/80 via-blue-900/70 to-slate-800/80"></div>
+        <div className="relative container mx-auto px-6 py-24 lg:py-32 z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-white to-blue-200 bg-clip-text text-transparent">
               Who We Are
