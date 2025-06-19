@@ -1,4 +1,3 @@
-
 import { useParams, Link } from "react-router-dom";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -205,6 +204,15 @@ const BlogPost = () => {
           )}
         </div>
       </article>
+
+      {/* Footer */}
+      <footer className="bg-[#1e3a8a] text-white py-6 sm:py-8">
+        <div className="container mx-auto px-4 sm:px-6 text-center">
+          <p className="text-slate-400 text-sm sm:text-base">
+            © 2024 Promax United Burkina Faso. All rights reserved. | Professional investment services across global markets.
+          </p>
+        </div>
+      </footer>
     </div>
   );
 };

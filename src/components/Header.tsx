@@ -3,13 +3,23 @@ import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const navigate = useNavigate();
 
   const scrollToSection = (sectionId: string) => {
-    document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
-    setIsOpen(false); // Close mobile menu after navigation
+    // If we're not on the home page, navigate to home first
+    if (window.location.pathname !== '/') {
+      navigate('/');
+      setTimeout(() => {
+        document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
+      }, 100);
+    } else {
+      document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
+    }
+    setIsOpen(false);
   };
 
   const navItems = [
@@ -24,13 +34,13 @@ const Header = () => {
       <div className="container mx-auto px-4 sm:px-6 py-3 sm:py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div className="flex items-center space-x-3">
+          <Link to="/" className="flex items-center space-x-3 hover:opacity-80 transition-opacity">
             <img 
               src="/lovable-uploads/196761c0-b662-49b1-8924-4f7320ac0c0b.png" 
               alt="Promax United Burkina Faso" 
               className="h-10 sm:h-12 w-auto"
             />
-          </div>
+          </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center space-x-6 xl:space-x-8">
@@ -60,13 +70,13 @@ const Header = () => {
             </SheetTrigger>
             <SheetContent side="right" className="w-[280px] sm:w-[350px]">
               <div className="flex flex-col space-y-6 mt-8">
-                <div className="flex items-center space-x-3 pb-4 border-b">
+                <Link to="/" className="flex items-center space-x-3 pb-4 border-b">
                   <img 
                     src="/lovable-uploads/196761c0-b662-49b1-8924-4f7320ac0c0b.png" 
                     alt="Promax United Burkina Faso" 
                     className="h-8 w-auto"
                   />
-                </div>
+                </Link>
                 {navItems.map((item) => (
                   <button 
                     key={item.id}
