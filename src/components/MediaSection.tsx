@@ -1,7 +1,7 @@
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Calendar, ExternalLink } from "lucide-react";
+import { Calendar, ExternalLink, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import VideoPlayer from "./VideoPlayer";
 
@@ -61,7 +61,15 @@ const MediaSection = () => {
 
         {/* News Section */}
         <div className="mb-12 sm:mb-16">
-          <h3 className="text-xl sm:text-2xl font-bold text-[#1a237e] mb-6 sm:mb-8 text-center sm:text-left">Latest News</h3>
+          <div className="flex justify-between items-center mb-6 sm:mb-8">
+            <h3 className="text-xl sm:text-2xl font-bold text-[#1a237e]">Latest News</h3>
+            <Link to="/news">
+              <Button variant="outline" className="border-[#1a237e] text-[#1a237e] hover:bg-[#1a237e] hover:text-white">
+                View All News
+                <ArrowRight className="h-4 w-4 ml-2" />
+              </Button>
+            </Link>
+          </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {newsItems.map((item, index) => (
               <Card key={index} className="group hover:shadow-lg transition-shadow duration-300">
@@ -99,26 +107,36 @@ const MediaSection = () => {
 
         {/* Videos Section */}
         <div>
-          <h3 className="text-xl sm:text-2xl font-bold text-[#1a237e] mb-6 sm:mb-8 text-center sm:text-left">Featured Videos</h3>
+          <div className="flex justify-between items-center mb-6 sm:mb-8">
+            <h3 className="text-xl sm:text-2xl font-bold text-[#1a237e]">Featured Videos</h3>
+            <Link to="/all-videos">
+              <Button variant="outline" className="border-[#1a237e] text-[#1a237e] hover:bg-[#1a237e] hover:text-white">
+                View All Videos
+                <ArrowRight className="h-4 w-4 ml-2" />
+              </Button>
+            </Link>
+          </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
             {videos.map((video, index) => (
               <Card key={index} className="group hover:shadow-lg transition-shadow duration-300 overflow-hidden">
-                <div className="relative h-48 sm:h-56">
-                  <VideoPlayer
-                    src={video.src}
-                    thumbnail={video.thumbnail}
-                    title={video.title}
-                    duration={video.duration}
-                  />
-                </div>
-                <CardHeader className="px-4 sm:px-6">
-                  <CardTitle className="text-base sm:text-lg font-bold text-[#1a237e]">
-                    {video.title}
-                  </CardTitle>
-                  <CardDescription className="text-slate-600 text-sm sm:text-base">
-                    {video.description}
-                  </CardDescription>
-                </CardHeader>
+                <Link to={`/videos/${index + 1}`}>
+                  <div className="relative h-48 sm:h-56">
+                    <VideoPlayer
+                      src={video.src}
+                      thumbnail={video.thumbnail}
+                      title={video.title}
+                      duration={video.duration}
+                    />
+                  </div>
+                  <CardHeader className="px-4 sm:px-6">
+                    <CardTitle className="text-base sm:text-lg font-bold text-[#1a237e]">
+                      {video.title}
+                    </CardTitle>
+                    <CardDescription className="text-slate-600 text-sm sm:text-base">
+                      {video.description}
+                    </CardDescription>
+                  </CardHeader>
+                </Link>
               </Card>
             ))}
           </div>
