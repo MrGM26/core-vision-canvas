@@ -1,5 +1,4 @@
-
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ArrowLeft, Calendar, ExternalLink } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -14,10 +13,16 @@ import {
   PaginationPrevious,
 } from "@/components/ui/pagination";
 import Header from "@/components/Header";
+import ScrollToTop from "@/components/ScrollToTop";
 
 const AllNews = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 6;
+
+  // Scroll to top when component mounts
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, []);
 
   const allNews = [
     {
@@ -188,6 +193,8 @@ const AllNews = () => {
           </p>
         </div>
       </footer>
+
+      <ScrollToTop />
     </div>
   );
 };

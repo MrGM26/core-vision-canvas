@@ -1,5 +1,4 @@
-
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ArrowLeft, Calendar, Play } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -13,10 +12,16 @@ import {
 } from "@/components/ui/pagination";
 import Header from "@/components/Header";
 import VideoPlayer from "@/components/VideoPlayer";
+import ScrollToTop from "@/components/ScrollToTop";
 
 const AllVideos = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 6;
+
+  // Scroll to top when component mounts
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, []);
 
   const allVideos = [
     {
@@ -195,6 +200,8 @@ const AllVideos = () => {
           </p>
         </div>
       </footer>
+
+      <ScrollToTop />
     </div>
   );
 };
