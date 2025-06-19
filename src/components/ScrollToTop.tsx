@@ -8,7 +8,7 @@ const ScrollToTop = () => {
 
   // Show button when page is scrolled down
   const toggleVisibility = () => {
-    if (window.pageYOffset > 300) {
+    if (window.scrollY > 200) {
       setIsVisible(true);
     } else {
       setIsVisible(false);
@@ -17,6 +17,9 @@ const ScrollToTop = () => {
 
   // Set up scroll event listener
   useEffect(() => {
+    // Check initial scroll position
+    toggleVisibility();
+    
     window.addEventListener("scroll", toggleVisibility);
     return () => window.removeEventListener("scroll", toggleVisibility);
   }, []);
@@ -34,10 +37,10 @@ const ScrollToTop = () => {
       {isVisible && (
         <Button
           onClick={scrollToTop}
-          className="fixed bottom-8 right-8 z-50 rounded-full p-3 bg-[#1a237e] hover:bg-[#3949ab] text-white shadow-lg transition-all duration-300 hover:scale-110"
+          className="fixed bottom-8 right-8 z-50 rounded-full p-4 bg-[#1a237e] hover:bg-[#3949ab] text-white shadow-xl transition-all duration-300 hover:scale-110 border-2 border-white"
           size="icon"
         >
-          <ArrowUp className="h-5 w-5" />
+          <ArrowUp className="h-6 w-6" />
         </Button>
       )}
     </>
