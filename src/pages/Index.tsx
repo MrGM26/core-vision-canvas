@@ -1,4 +1,3 @@
-
 import { Shield, Mountain, Building, Bolt, Banknote, Mail, Phone, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -8,6 +7,7 @@ import { useState } from "react";
 import { toast } from "sonner";
 import Header from "@/components/Header";
 import MediaSection from "@/components/MediaSection";
+import ScrollToTop from "@/components/ScrollToTop";
 
 const Index = () => {
   const [formData, setFormData] = useState({
@@ -283,6 +283,8 @@ const Index = () => {
           </p>
         </div>
       </footer>
+      
+      <ScrollToTop />
     </div>
   );
 };
