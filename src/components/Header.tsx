@@ -23,39 +23,41 @@ const Header = () => {
   };
 
   const navItems = [
-    { label: "About", id: "about" },
-    { label: "Projects", id: "projects" },
-    { label: "Media", id: "media" },
+    { label: "Home", id: "hero" },
+    { label: "Who We Are", id: "who-we-are" },
+    { label: "What We Do", id: "what-we-do" },
+    { label: "Impact", id: "impact" },
+    { label: "Partnerships", id: "partnerships" },
+    { label: "Leadership", id: "leadership" },
     { label: "Contact", id: "contact" },
   ];
 
   return (
-    <header className="bg-white shadow-sm border-b sticky top-0 z-50">
+    <header className="bg-background/95 backdrop-blur-md border-b border-border sticky top-0 z-50 transition-all duration-300">
       <div className="container mx-auto px-4 sm:px-6 py-3 sm:py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3 hover:opacity-80 transition-opacity">
-            <img 
-              src="/lovable-uploads/196761c0-b662-49b1-8924-4f7320ac0c0b.png" 
-              alt="Promax United Burkina Faso" 
-              className="h-10 sm:h-12 w-auto"
-            />
+            <div className="text-xl font-bold text-primary">
+              Promax <span className="text-accent">BF</span>
+            </div>
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center space-x-6 xl:space-x-8">
+          <nav className="hidden lg:flex items-center space-x-8">
             {navItems.slice(0, -1).map((item) => (
               <button 
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className="text-slate-700 hover:text-[#1e3a8a] transition-colors font-medium text-sm xl:text-base"
+                className="text-foreground/80 hover:text-accent transition-colors font-medium text-sm relative group"
               >
                 {item.label}
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-accent transition-all duration-300 group-hover:w-full"></span>
               </button>
             ))}
             <Button 
               onClick={() => scrollToSection('contact')}
-              className="bg-[#1e3a8a] hover:bg-[#1e40af] text-white text-sm xl:text-base px-4 xl:px-6"
+              className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold"
             >
               Contact
             </Button>
@@ -64,24 +66,22 @@ const Header = () => {
           {/* Mobile Menu Button */}
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
             <SheetTrigger asChild className="lg:hidden">
-              <Button variant="outline" size="sm" className="border-[#1e3a8a] text-[#1e3a8a]">
+              <Button variant="outline" size="sm" className="border-accent text-accent">
                 <Menu className="h-5 w-5" />
               </Button>
             </SheetTrigger>
             <SheetContent side="right" className="w-[280px] sm:w-[350px]">
               <div className="flex flex-col space-y-6 mt-8">
                 <Link to="/" className="flex items-center space-x-3 pb-4 border-b">
-                  <img 
-                    src="/lovable-uploads/196761c0-b662-49b1-8924-4f7320ac0c0b.png" 
-                    alt="Promax United Burkina Faso" 
-                    className="h-8 w-auto"
-                  />
+                  <div className="text-lg font-bold text-primary">
+                    Promax <span className="text-accent">BF</span>
+                  </div>
                 </Link>
                 {navItems.map((item) => (
                   <button 
                     key={item.id}
                     onClick={() => scrollToSection(item.id)}
-                    className="text-left text-lg font-medium text-slate-700 hover:text-[#1e3a8a] transition-colors py-2"
+                    className="text-left text-lg font-medium text-foreground hover:text-accent transition-colors py-2"
                   >
                     {item.label}
                   </button>
