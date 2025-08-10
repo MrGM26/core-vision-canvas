@@ -184,3 +184,31 @@
 .rotate-y-180 {
   transform: rotateY(180deg);
 }
+
+/* Leadership Cards */
+.leadership-card {
+  cursor: pointer;
+}
+
+.leadership-icons {
+  backdrop-filter: blur(4px);
+}
+
+/* Mobile responsive behavior for leadership cards */
+@media (hover: none) {
+  .leadership-card:active .leadership-icons {
+    opacity: 1 !important;
+    transform: translateX(0) !important;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .leadership-card img {
+    transition: none !important;
+  }
+  
+  .leadership-card .group-hover\:scale-\[1\.03\] {
+    transform: none !important;
+  }
+}

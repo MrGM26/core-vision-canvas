@@ -356,233 +356,114 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Leadership */}
+      {/* Leadership & Management */}
       <section id="leadership" className="py-8 bg-background">
         <div className="container mx-auto px-4 sm:px-6">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16 fade-in-up">
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-primary mb-6">
-                Our Leadership
+                Leadership & Management
               </h2>
               <p className="text-xl text-foreground/80 max-w-3xl mx-auto">
                 Visionary leaders driving transformation across Burkina Faso
               </p>
             </div>
             
-            {/* Main Leader - Dr. Sara */}
-            <div className="mb-16">
-              <Card className="border-accent/20 overflow-hidden hover:shadow-2xl hover:shadow-accent/10 transition-all duration-300">
-                <div className="grid lg:grid-cols-2 gap-0">
-                  <div className="relative">
-                    <img 
-                      src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=500&fit=crop"
-                      alt="Dr. Sara Al Mashjari"
-                      className="w-full h-full object-cover"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent" />
-                    <div className="absolute top-4 left-4">
-                      <span className="bg-accent text-accent-foreground px-3 py-1 rounded-full text-sm font-semibold">
-                        Founder & CEO
-                      </span>
-                    </div>
+            {/* Leadership Cards Grid */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 lg:gap-7 max-w-4xl mx-auto">
+              
+              {/* Alexander Reay - CEO */}
+              <div className="leadership-card group fade-in-up">
+                <div className="relative h-0 pb-[125%] rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-500">
+                  <img 
+                    src="/lovable-uploads/196761c0-b662-49b1-8924-4f7320ac0c0b.png"
+                    alt="Alexander Reay"
+                    className="absolute inset-0 w-full h-full object-cover object-[50%_15%] transition-transform duration-500 group-hover:scale-[1.03]"
+                  />
+                  
+                  {/* Bottom gradient overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#000000B3] via-transparent to-transparent" 
+                       style={{ backgroundImage: 'linear-gradient(to top, #000000B3 0%, transparent 55%)' }}>
                   </div>
-                  <div className="p-8 lg:p-12 flex flex-col justify-center">
-                    <div className="border-l-4 border-accent pl-6 mb-8">
-                      <h3 className="text-2xl font-bold text-primary mb-2">Dr. Sara Al Mashjari</h3>
-                      <p className="text-accent font-semibold">Founder & Strategic Advisor</p>
-                    </div>
-                    <p className="text-lg text-foreground/80 leading-relaxed mb-8">
-                      Recognized for leadership in business innovation, PPPs, and sustainable development, Dr. Sara brings global perspective and regional depth to Promax's operations.
+                  
+                  {/* Text overlay */}
+                  <div className="absolute bottom-0 left-0 right-0 p-6">
+                    <h3 className="text-white font-bold uppercase text-xl mb-1 tracking-wide">
+                      MR. ALEXANDER REAY
+                    </h3>
+                    <p className="text-[#D4AF37] font-medium text-lg">
+                      Chief Executive Officer (CEO)
                     </p>
-                    <blockquote className="text-xl italic text-primary font-medium border-l-2 border-accent pl-6">
-                      "We believe in bold execution, grounded in trust and aligned with national vision."
-                    </blockquote>
-                  </div>
-                </div>
-              </Card>
-            </div>
-
-            {/* Executive Team Grid */}
-            <div className="grid md:grid-cols-3 gap-8">
-              {/* Chief Operating Officer - Flip Card */}
-              <div className="group perspective-1000 h-80">
-                <div className="relative w-full h-full transition-transform duration-700 transform-style-preserve-3d group-hover:rotate-y-180">
-                  {/* Front Side */}
-                  <div className="absolute inset-0 backface-hidden">
-                    <Card className="border-accent/20 overflow-hidden h-full">
-                      <div className="relative h-full">
-                        <img 
-                          src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=400&fit=crop"
-                          alt="Marcus Thompson"
-                          className="w-full h-full object-cover"
-                        />
-                        <div className="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent" />
-                        <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                          <h4 className="text-xl font-bold mb-1">Marcus Thompson</h4>
-                          <p className="text-accent font-medium">Chief Operating Officer</p>
-                        </div>
-                        <div className="absolute top-4 right-4">
-                          <div className="w-3 h-3 bg-green-400 rounded-full animate-pulse"></div>
-                        </div>
-                      </div>
-                    </Card>
                   </div>
                   
-                  {/* Back Side */}
-                  <div className="absolute inset-0 backface-hidden rotate-y-180">
-                    <Card className="border-accent/20 h-full bg-primary/5">
-                      <div className="p-6 h-full flex flex-col justify-between">
-                        <div>
-                          <div className="mb-4">
-                            <h4 className="text-lg font-bold text-primary mb-1">Marcus Thompson</h4>
-                            <p className="text-accent font-medium text-sm">Chief Operating Officer</p>
-                          </div>
-                          <div className="space-y-3 text-sm text-foreground/80">
-                            <p>• 15+ years infrastructure development</p>
-                            <p>• Expert in large-scale project management</p>
-                            <p>• Government relations specialist</p>
-                            <p>• Led $500M+ infrastructure projects</p>
-                          </div>
-                        </div>
-                        <div className="flex justify-center gap-4 pt-4">
-                          <button
-                            onClick={() => window.open('https://linkedin.com/in/marcus-thompson-promax', '_blank')}
-                            className="p-3 rounded-full bg-accent/20 hover:bg-accent hover:text-accent-foreground transition-all duration-300"
-                          >
-                            <Linkedin className="h-5 w-5" />
-                          </button>
-                          <button
-                            onClick={() => window.location.href = 'mailto:m.thompson@promax-bf.com'}
-                            className="p-3 rounded-full bg-accent/20 hover:bg-accent hover:text-accent-foreground transition-all duration-300"
-                          >
-                            <Mail className="h-5 w-5" />
-                          </button>
-                        </div>
-                      </div>
-                    </Card>
+                  {/* Icons bar */}
+                  <div className="absolute bottom-6 right-6 flex gap-3 leadership-icons opacity-0 translate-x-4 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0">
+                    <button
+                      onClick={() => window.location.href = 'mailto:ceo@promax-bf.com'}
+                      className="p-2 text-white hover:scale-110 transition-transform duration-200"
+                      title="Email"
+                      aria-label="Email Alexander Reay"
+                    >
+                      <Mail className="h-5 w-5" />
+                    </button>
+                    <button
+                      onClick={() => window.open('https://www.linkedin.com/in/alexanderreay', '_blank', 'noopener,noreferrer')}
+                      className="p-2 text-white hover:scale-110 transition-transform duration-200"
+                      title="LinkedIn"
+                      aria-label="LinkedIn profile of Alexander Reay"
+                    >
+                      <Linkedin className="h-5 w-5" />
+                    </button>
                   </div>
                 </div>
               </div>
 
-              {/* Head of Strategic Partnerships - Flip Card */}
-              <div className="group perspective-1000 h-80">
-                <div className="relative w-full h-full transition-transform duration-700 transform-style-preserve-3d group-hover:rotate-y-180">
-                  {/* Front Side */}
-                  <div className="absolute inset-0 backface-hidden">
-                    <Card className="border-accent/20 overflow-hidden h-full">
-                      <div className="relative h-full">
-                        <img 
-                          src="https://images.unsplash.com/photo-1494790108755-2616b612b647?w=300&h=400&fit=crop"
-                          alt="Aminata Koné"
-                          className="w-full h-full object-cover"
-                        />
-                        <div className="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent" />
-                        <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                          <h4 className="text-xl font-bold mb-1">Aminata Koné</h4>
-                          <p className="text-accent font-medium">Head of Strategic Partnerships</p>
-                        </div>
-                        <div className="absolute top-4 right-4">
-                          <div className="w-3 h-3 bg-blue-400 rounded-full animate-pulse"></div>
-                        </div>
-                      </div>
-                    </Card>
+              {/* Eric Benz - CSO */}
+              <div className="leadership-card group fade-in-up">
+                <div className="relative h-0 pb-[125%] rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-500">
+                  <img 
+                    src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=500&fit=crop&crop=face"
+                    alt="Eric Benz"
+                    className="absolute inset-0 w-full h-full object-cover object-[50%_15%] transition-transform duration-500 group-hover:scale-[1.03]"
+                  />
+                  
+                  {/* Bottom gradient overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#000000B3] via-transparent to-transparent" 
+                       style={{ backgroundImage: 'linear-gradient(to top, #000000B3 0%, transparent 55%)' }}>
                   </div>
                   
-                  {/* Back Side */}
-                  <div className="absolute inset-0 backface-hidden rotate-y-180">
-                    <Card className="border-accent/20 h-full bg-primary/5">
-                      <div className="p-6 h-full flex flex-col justify-between">
-                        <div>
-                          <div className="mb-4">
-                            <h4 className="text-lg font-bold text-primary mb-1">Aminata Koné</h4>
-                            <p className="text-accent font-medium text-sm">Head of Strategic Partnerships</p>
-                          </div>
-                          <div className="space-y-3 text-sm text-foreground/80">
-                            <p>• Former diplomatic service officer</p>
-                            <p>• International development finance expert</p>
-                            <p>• Cross-border investment facilitation</p>
-                            <p>• Fluent in 5 languages</p>
-                          </div>
-                        </div>
-                        <div className="flex justify-center gap-4 pt-4">
-                          <button
-                            onClick={() => window.open('https://linkedin.com/in/aminata-kone-promax', '_blank')}
-                            className="p-3 rounded-full bg-accent/20 hover:bg-accent hover:text-accent-foreground transition-all duration-300"
-                          >
-                            <Linkedin className="h-5 w-5" />
-                          </button>
-                          <button
-                            onClick={() => window.location.href = 'mailto:a.kone@promax-bf.com'}
-                            className="p-3 rounded-full bg-accent/20 hover:bg-accent hover:text-accent-foreground transition-all duration-300"
-                          >
-                            <Mail className="h-5 w-5" />
-                          </button>
-                        </div>
-                      </div>
-                    </Card>
+                  {/* Text overlay */}
+                  <div className="absolute bottom-0 left-0 right-0 p-6">
+                    <h3 className="text-white font-bold uppercase text-xl mb-1 tracking-wide">
+                      MR. ERIC BENZ
+                    </h3>
+                    <p className="text-[#D4AF37] font-medium text-lg">
+                      Chief Strategic Officer
+                    </p>
+                  </div>
+                  
+                  {/* Icons bar */}
+                  <div className="absolute bottom-6 right-6 flex gap-3 leadership-icons opacity-0 translate-x-4 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0">
+                    <button
+                      onClick={() => window.location.href = 'mailto:cso@promax-bf.com'}
+                      className="p-2 text-white hover:scale-110 transition-transform duration-200"
+                      title="Email"
+                      aria-label="Email Eric Benz"
+                    >
+                      <Mail className="h-5 w-5" />
+                    </button>
+                    <button
+                      onClick={() => window.open('https://www.linkedin.com/in/ericbenz', '_blank', 'noopener,noreferrer')}
+                      className="p-2 text-white hover:scale-110 transition-transform duration-200"
+                      title="LinkedIn"
+                      aria-label="LinkedIn profile of Eric Benz"
+                    >
+                      <Linkedin className="h-5 w-5" />
+                    </button>
                   </div>
                 </div>
               </div>
 
-              {/* Head of Mining & Resources - Flip Card */}
-              <div className="group perspective-1000 h-80">
-                <div className="relative w-full h-full transition-transform duration-700 transform-style-preserve-3d group-hover:rotate-y-180">
-                  {/* Front Side */}
-                  <div className="absolute inset-0 backface-hidden">
-                    <Card className="border-accent/20 overflow-hidden h-full">
-                      <div className="relative h-full">
-                        <img 
-                          src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=300&h=400&fit=crop"
-                          alt="James Bakari"
-                          className="w-full h-full object-cover"
-                        />
-                        <div className="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent" />
-                        <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                          <h4 className="text-xl font-bold mb-1">James Bakari</h4>
-                          <p className="text-accent font-medium">Head of Mining & Resources</p>
-                        </div>
-                        <div className="absolute top-4 right-4">
-                          <div className="w-3 h-3 bg-yellow-400 rounded-full animate-pulse"></div>
-                        </div>
-                      </div>
-                    </Card>
-                  </div>
-                  
-                  {/* Back Side */}
-                  <div className="absolute inset-0 backface-hidden rotate-y-180">
-                    <Card className="border-accent/20 h-full bg-primary/5">
-                      <div className="p-6 h-full flex flex-col justify-between">
-                        <div>
-                          <div className="mb-4">
-                            <h4 className="text-lg font-bold text-primary mb-1">James Bakari</h4>
-                            <p className="text-accent font-medium text-sm">Head of Mining & Resources</p>
-                          </div>
-                          <div className="space-y-3 text-sm text-foreground/80">
-                            <p>• 20+ years African mineral exploration</p>
-                            <p>• Geologist and mining engineer</p>
-                            <p>• Sustainable extraction specialist</p>
-                            <p>• Discovered 3 major gold deposits</p>
-                          </div>
-                        </div>
-                        <div className="flex justify-center gap-4 pt-4">
-                          <button
-                            onClick={() => window.open('https://linkedin.com/in/james-bakari-promax', '_blank')}
-                            className="p-3 rounded-full bg-accent/20 hover:bg-accent hover:text-accent-foreground transition-all duration-300"
-                          >
-                            <Linkedin className="h-5 w-5" />
-                          </button>
-                          <button
-                            onClick={() => window.location.href = 'mailto:j.bakari@promax-bf.com'}
-                            className="p-3 rounded-full bg-accent/20 hover:bg-accent hover:text-accent-foreground transition-all duration-300"
-                          >
-                            <Mail className="h-5 w-5" />
-                          </button>
-                        </div>
-                      </div>
-                    </Card>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
