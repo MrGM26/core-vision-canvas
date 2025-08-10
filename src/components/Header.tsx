@@ -24,9 +24,9 @@ const Header = () => {
 
   const navItems = [
     { label: "Home", id: "hero" },
-    { label: "Who We Are", id: "who-we-are" },
-    { label: "What We Do", id: "what-we-do" },
-    { label: "Impact", id: "impact" },
+    { label: "Our Story", id: "who-we-are" },
+    { label: "Our Impact", id: "what-we-do" },
+    { label: "Shaping Tomorrow", id: "impact" },
     
     { label: "Leadership", id: "leadership" },
     { label: "Partnerships", id: "partnerships" },
