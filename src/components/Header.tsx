@@ -42,7 +42,7 @@ const Header = () => {
             <img 
               src="/lovable-uploads/81a76c91-0e72-48cc-ac9b-558049eedfd2.png" 
               alt="Promax BF Logo" 
-              className="h-12 w-auto"
+              className="h-16 w-auto"
             />
           </Link>
 
@@ -79,7 +79,7 @@ const Header = () => {
                   <img 
                     src="/lovable-uploads/81a76c91-0e72-48cc-ac9b-558049eedfd2.png" 
                     alt="Promax BF Logo" 
-                    className="h-6 w-auto"
+                    className="h-8 w-auto"
                   />
                 </Link>
                 {navItems.map((item) => (
