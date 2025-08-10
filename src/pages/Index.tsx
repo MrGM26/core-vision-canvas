@@ -608,6 +608,21 @@ const Index = () => {
                 Ready to explore partnership opportunities? We'd love to hear from you.
               </p>
             </div>
+
+            {/* Investment Inquiries Banner */}
+            <div className="mb-12 fade-in-up">
+              <Card className="bg-accent/10 backdrop-blur-sm border-accent/30">
+                <CardContent className="p-8">
+                  <h3 className="text-2xl font-bold text-white mb-4">Investment Inquiries</h3>
+                  <p className="text-white/90 leading-relaxed text-lg mb-4">
+                    For partnership opportunities and investment discussions, please include details about your project scope, timeline, and funding requirements in your message.
+                  </p>
+                  <p className="text-white/70 text-base">
+                    Promax United office details available upon request.
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
             
             <div className="grid lg:grid-cols-2 gap-12">
               {/* Contact Form */}
@@ -676,7 +691,7 @@ const Index = () => {
                       </div>
                       <div>
                         <p className="font-semibold text-white">Location</p>
-                        <p className="text-off-white/80">Ouagadougou, Burkina Faso</p>
+                        <p className="text-white/90">Ouagadougou, Burkina Faso</p>
                       </div>
                     </div>
                     <div className="flex items-center gap-4">
@@ -685,7 +700,7 @@ const Index = () => {
                       </div>
                       <div>
                         <p className="font-semibold text-white">Email</p>
-                        <p className="text-off-white/80">info@promax-bf.com</p>
+                        <p className="text-white/90">info@promax-bf.com</p>
                       </div>
                     </div>
                     <div className="flex items-center gap-4">
@@ -694,7 +709,7 @@ const Index = () => {
                       </div>
                       <div>
                         <p className="font-semibold text-white">Phone</p>
-                        <p className="text-off-white/80">+226 XXX XXX XXX</p>
+                        <p className="text-white/90">+226 XXX XXX XXX</p>
                       </div>
                     </div>
                     <div className="flex items-center gap-4">
@@ -703,7 +718,7 @@ const Index = () => {
                       </div>
                       <div>
                         <p className="font-semibold text-white">Website</p>
-                        <p className="text-off-white/80">www.promax-bf.com</p>
+                        <p className="text-white/90">www.promax-bf.com</p>
                       </div>
                     </div>
                   </div>
@@ -711,13 +726,12 @@ const Index = () => {
 
                 <Card className="bg-white/10 backdrop-blur-sm border-accent/20">
                   <CardContent className="p-6">
-                    <h4 className="font-bold text-white mb-3">Investment Inquiries</h4>
-                    <p className="text-off-white/80 leading-relaxed text-sm">
-                      For partnership opportunities and investment discussions, please include details about 
-                      your project scope, timeline, and funding requirements in your message.
+                    <h4 className="font-bold text-white mb-3">Office Hours</h4>
+                    <p className="text-white/90 leading-relaxed text-sm mb-2">
+                      Monday - Friday: 8:00 AM - 6:00 PM
                     </p>
-                    <p className="text-off-white/60 text-sm mt-4">
-                      Promax United office details available upon request.
+                    <p className="text-white/90 leading-relaxed text-sm">
+                      Saturday: 9:00 AM - 2:00 PM
                     </p>
                   </CardContent>
                 </Card>
