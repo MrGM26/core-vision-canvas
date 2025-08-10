@@ -1,4 +1,4 @@
-import { Shield, Mountain, Building, Banknote, Zap, Eye, Target, Mail, Phone, MapPin, ExternalLink, ArrowRight } from "lucide-react";
+import { Shield, Mountain, Building, Banknote, Zap, Eye, Target, Mail, Phone, MapPin, ExternalLink, ArrowRight, Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -404,89 +404,185 @@ const Index = () => {
 
             {/* Executive Team Grid */}
             <div className="grid md:grid-cols-3 gap-8">
-              {/* Chief Operating Officer */}
-              <Card className="group border-accent/20 overflow-hidden hover:shadow-xl hover:shadow-accent/10 transition-all duration-300">
-                <div className="relative">
-                  <img 
-                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=400&fit=crop"
-                    alt="Marcus Thompson"
-                    className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-primary/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                  <div className="absolute top-4 right-4">
-                    <div className="w-3 h-3 bg-green-400 rounded-full animate-pulse"></div>
+              {/* Chief Operating Officer - Flip Card */}
+              <div className="group perspective-1000 h-80">
+                <div className="relative w-full h-full transition-transform duration-700 transform-style-preserve-3d group-hover:rotate-y-180">
+                  {/* Front Side */}
+                  <div className="absolute inset-0 backface-hidden">
+                    <Card className="border-accent/20 overflow-hidden h-full">
+                      <div className="relative h-full">
+                        <img 
+                          src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=400&fit=crop"
+                          alt="Marcus Thompson"
+                          className="w-full h-full object-cover"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent" />
+                        <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+                          <h4 className="text-xl font-bold mb-1">Marcus Thompson</h4>
+                          <p className="text-accent font-medium">Chief Operating Officer</p>
+                        </div>
+                        <div className="absolute top-4 right-4">
+                          <div className="w-3 h-3 bg-green-400 rounded-full animate-pulse"></div>
+                        </div>
+                      </div>
+                    </Card>
+                  </div>
+                  
+                  {/* Back Side */}
+                  <div className="absolute inset-0 backface-hidden rotate-y-180">
+                    <Card className="border-accent/20 h-full bg-primary/5">
+                      <div className="p-6 h-full flex flex-col justify-between">
+                        <div>
+                          <div className="mb-4">
+                            <h4 className="text-lg font-bold text-primary mb-1">Marcus Thompson</h4>
+                            <p className="text-accent font-medium text-sm">Chief Operating Officer</p>
+                          </div>
+                          <div className="space-y-3 text-sm text-foreground/80">
+                            <p>• 15+ years infrastructure development</p>
+                            <p>• Expert in large-scale project management</p>
+                            <p>• Government relations specialist</p>
+                            <p>• Led $500M+ infrastructure projects</p>
+                          </div>
+                        </div>
+                        <div className="flex justify-center gap-4 pt-4">
+                          <button
+                            onClick={() => window.open('https://linkedin.com/in/marcus-thompson-promax', '_blank')}
+                            className="p-3 rounded-full bg-accent/20 hover:bg-accent hover:text-accent-foreground transition-all duration-300"
+                          >
+                            <Linkedin className="h-5 w-5" />
+                          </button>
+                          <button
+                            onClick={() => window.location.href = 'mailto:m.thompson@promax-bf.com'}
+                            className="p-3 rounded-full bg-accent/20 hover:bg-accent hover:text-accent-foreground transition-all duration-300"
+                          >
+                            <Mail className="h-5 w-5" />
+                          </button>
+                        </div>
+                      </div>
+                    </Card>
                   </div>
                 </div>
-                <div className="p-6">
-                  <div className="mb-4">
-                    <h4 className="text-lg font-bold text-primary mb-1">Marcus Thompson</h4>
-                    <p className="text-accent font-medium text-sm">Chief Operating Officer</p>
-                  </div>
-                  <p className="text-foreground/70 text-sm leading-relaxed mb-4">
-                    15+ years in infrastructure development across West Africa. Expert in large-scale project management and government relations.
-                  </p>
-                  <div className="flex items-center gap-2 text-xs text-foreground/60">
-                    <div className="w-2 h-2 bg-accent rounded-full"></div>
-                    <span>Operations Excellence</span>
-                  </div>
-                </div>
-              </Card>
+              </div>
 
-              {/* Head of Strategic Partnerships */}
-              <Card className="group border-accent/20 overflow-hidden hover:shadow-xl hover:shadow-accent/10 transition-all duration-300">
-                <div className="relative">
-                  <img 
-                    src="https://images.unsplash.com/photo-1494790108755-2616b612b647?w=300&h=400&fit=crop"
-                    alt="Aminata Koné"
-                    className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-primary/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                  <div className="absolute top-4 right-4">
-                    <div className="w-3 h-3 bg-blue-400 rounded-full animate-pulse"></div>
+              {/* Head of Strategic Partnerships - Flip Card */}
+              <div className="group perspective-1000 h-80">
+                <div className="relative w-full h-full transition-transform duration-700 transform-style-preserve-3d group-hover:rotate-y-180">
+                  {/* Front Side */}
+                  <div className="absolute inset-0 backface-hidden">
+                    <Card className="border-accent/20 overflow-hidden h-full">
+                      <div className="relative h-full">
+                        <img 
+                          src="https://images.unsplash.com/photo-1494790108755-2616b612b647?w=300&h=400&fit=crop"
+                          alt="Aminata Koné"
+                          className="w-full h-full object-cover"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent" />
+                        <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+                          <h4 className="text-xl font-bold mb-1">Aminata Koné</h4>
+                          <p className="text-accent font-medium">Head of Strategic Partnerships</p>
+                        </div>
+                        <div className="absolute top-4 right-4">
+                          <div className="w-3 h-3 bg-blue-400 rounded-full animate-pulse"></div>
+                        </div>
+                      </div>
+                    </Card>
+                  </div>
+                  
+                  {/* Back Side */}
+                  <div className="absolute inset-0 backface-hidden rotate-y-180">
+                    <Card className="border-accent/20 h-full bg-primary/5">
+                      <div className="p-6 h-full flex flex-col justify-between">
+                        <div>
+                          <div className="mb-4">
+                            <h4 className="text-lg font-bold text-primary mb-1">Aminata Koné</h4>
+                            <p className="text-accent font-medium text-sm">Head of Strategic Partnerships</p>
+                          </div>
+                          <div className="space-y-3 text-sm text-foreground/80">
+                            <p>• Former diplomatic service officer</p>
+                            <p>• International development finance expert</p>
+                            <p>• Cross-border investment facilitation</p>
+                            <p>• Fluent in 5 languages</p>
+                          </div>
+                        </div>
+                        <div className="flex justify-center gap-4 pt-4">
+                          <button
+                            onClick={() => window.open('https://linkedin.com/in/aminata-kone-promax', '_blank')}
+                            className="p-3 rounded-full bg-accent/20 hover:bg-accent hover:text-accent-foreground transition-all duration-300"
+                          >
+                            <Linkedin className="h-5 w-5" />
+                          </button>
+                          <button
+                            onClick={() => window.location.href = 'mailto:a.kone@promax-bf.com'}
+                            className="p-3 rounded-full bg-accent/20 hover:bg-accent hover:text-accent-foreground transition-all duration-300"
+                          >
+                            <Mail className="h-5 w-5" />
+                          </button>
+                        </div>
+                      </div>
+                    </Card>
                   </div>
                 </div>
-                <div className="p-6">
-                  <div className="mb-4">
-                    <h4 className="text-lg font-bold text-primary mb-1">Aminata Koné</h4>
-                    <p className="text-accent font-medium text-sm">Head of Strategic Partnerships</p>
-                  </div>
-                  <p className="text-foreground/70 text-sm leading-relaxed mb-4">
-                    Former diplomatic service officer with deep expertise in international development finance and cross-border investment facilitation.
-                  </p>
-                  <div className="flex items-center gap-2 text-xs text-foreground/60">
-                    <div className="w-2 h-2 bg-accent rounded-full"></div>
-                    <span>Global Networks</span>
-                  </div>
-                </div>
-              </Card>
+              </div>
 
-              {/* Head of Mining & Resources */}
-              <Card className="group border-accent/20 overflow-hidden hover:shadow-xl hover:shadow-accent/10 transition-all duration-300">
-                <div className="relative">
-                  <img 
-                    src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=300&h=400&fit=crop"
-                    alt="James Bakari"
-                    className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-primary/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                  <div className="absolute top-4 right-4">
-                    <div className="w-3 h-3 bg-yellow-400 rounded-full animate-pulse"></div>
+              {/* Head of Mining & Resources - Flip Card */}
+              <div className="group perspective-1000 h-80">
+                <div className="relative w-full h-full transition-transform duration-700 transform-style-preserve-3d group-hover:rotate-y-180">
+                  {/* Front Side */}
+                  <div className="absolute inset-0 backface-hidden">
+                    <Card className="border-accent/20 overflow-hidden h-full">
+                      <div className="relative h-full">
+                        <img 
+                          src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=300&h=400&fit=crop"
+                          alt="James Bakari"
+                          className="w-full h-full object-cover"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent" />
+                        <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+                          <h4 className="text-xl font-bold mb-1">James Bakari</h4>
+                          <p className="text-accent font-medium">Head of Mining & Resources</p>
+                        </div>
+                        <div className="absolute top-4 right-4">
+                          <div className="w-3 h-3 bg-yellow-400 rounded-full animate-pulse"></div>
+                        </div>
+                      </div>
+                    </Card>
+                  </div>
+                  
+                  {/* Back Side */}
+                  <div className="absolute inset-0 backface-hidden rotate-y-180">
+                    <Card className="border-accent/20 h-full bg-primary/5">
+                      <div className="p-6 h-full flex flex-col justify-between">
+                        <div>
+                          <div className="mb-4">
+                            <h4 className="text-lg font-bold text-primary mb-1">James Bakari</h4>
+                            <p className="text-accent font-medium text-sm">Head of Mining & Resources</p>
+                          </div>
+                          <div className="space-y-3 text-sm text-foreground/80">
+                            <p>• 20+ years African mineral exploration</p>
+                            <p>• Geologist and mining engineer</p>
+                            <p>• Sustainable extraction specialist</p>
+                            <p>• Discovered 3 major gold deposits</p>
+                          </div>
+                        </div>
+                        <div className="flex justify-center gap-4 pt-4">
+                          <button
+                            onClick={() => window.open('https://linkedin.com/in/james-bakari-promax', '_blank')}
+                            className="p-3 rounded-full bg-accent/20 hover:bg-accent hover:text-accent-foreground transition-all duration-300"
+                          >
+                            <Linkedin className="h-5 w-5" />
+                          </button>
+                          <button
+                            onClick={() => window.location.href = 'mailto:j.bakari@promax-bf.com'}
+                            className="p-3 rounded-full bg-accent/20 hover:bg-accent hover:text-accent-foreground transition-all duration-300"
+                          >
+                            <Mail className="h-5 w-5" />
+                          </button>
+                        </div>
+                      </div>
+                    </Card>
                   </div>
                 </div>
-                <div className="p-6">
-                  <div className="mb-4">
-                    <h4 className="text-lg font-bold text-primary mb-1">James Bakari</h4>
-                    <p className="text-accent font-medium text-sm">Head of Mining & Resources</p>
-                  </div>
-                  <p className="text-foreground/70 text-sm leading-relaxed mb-4">
-                    Geologist and mining engineer with 20+ years in African mineral exploration. Specialist in sustainable extraction practices.
-                  </p>
-                  <div className="flex items-center gap-2 text-xs text-foreground/60">
-                    <div className="w-2 h-2 bg-accent rounded-full"></div>
-                    <span>Resource Innovation</span>
-                  </div>
-                </div>
-              </Card>
+              </div>
             </div>
           </div>
         </div>
