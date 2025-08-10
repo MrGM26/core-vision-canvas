@@ -42,7 +42,7 @@ const Header = () => {
             <img 
               src="/lovable-uploads/196761c0-b662-49b1-8924-4f7320ac0c0b.png" 
               alt="Promax BF Logo" 
-              className="h-8 w-auto"
+              className="h-12 w-auto"
             />
           </Link>
 
