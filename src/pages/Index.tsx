@@ -7,6 +7,8 @@ import { useState, useEffect } from "react";
 import { toast } from "sonner";
 import Header from "@/components/Header";
 import ScrollToTop from "@/components/ScrollToTop";
+import securityInfrastructure from "@/assets/security-infrastructure.jpg";
+import goldExploration from "@/assets/gold-exploration.jpg";
 
 const Index = () => {
   const [formData, setFormData] = useState({
@@ -88,11 +90,11 @@ const Index = () => {
   const impactItems = [
     {
       title: "Security zones with advanced infrastructure",
-      image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=600&h=400&fit=crop"
+      image: securityInfrastructure
     },
     {
       title: "Gold exploration in high-potential regions",
-      image: "https://images.unsplash.com/photo-1624542506639-13a8fc599a1d?w=600&h=400&fit=crop"
+      image: goldExploration
     },
     {
       title: "Digital finance and e-payment systems",
@@ -167,34 +169,34 @@ const Index = () => {
       </section>
 
       {/* Our Story */}
-      <section id="who-we-are" className="py-8 bg-background">
+      <section id="who-we-are" className="py-16 bg-background">
         <div className="container mx-auto px-4 sm:px-6">
-          <div className="max-w-6xl mx-auto">
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
-              <div className="fade-in-up">
-                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-primary mb-8">
-                  Our Story
-                </h2>
-                <p className="text-lg text-foreground/80 leading-relaxed mb-8">
-                  Promax Burkina Faso is a leading investment and business development company delivering strategic, high-impact projects across Burkina Faso and West Africa. We specialize in emerging markets and high-growth sectors including security, gold & mining, infrastructure, financial services, and energy solutions.
-                </p>
-                <p className="text-lg text-foreground/80 leading-relaxed">
-                  Operating closely with government entities, we provide a trusted gateway for foreign and local investors, development institutions, and strategic partners to engage in transformational opportunities aligned with Burkina Faso's national development plan.
-                </p>
-              </div>
+          <div className="max-w-4xl mx-auto text-center fade-in-up">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-primary mb-12">
+              Our Story
+            </h2>
+            
+            <div className="space-y-8 text-center">
+              <p className="text-xl text-foreground/80 leading-relaxed">
+                Promax Burkina Faso is a leading investment and business development company delivering strategic, high-impact projects across Burkina Faso and West Africa. We specialize in emerging markets and high-growth sectors including security, gold & mining, infrastructure, financial services, and energy solutions.
+              </p>
               
-              <div className="fade-in-up space-y-8">
+              <p className="text-xl text-foreground/80 leading-relaxed">
+                Operating closely with government entities, we provide a trusted gateway for foreign and local investors, development institutions, and strategic partners to engage in transformational opportunities aligned with Burkina Faso's national development plan.
+              </p>
+              
+              <div className="grid md:grid-cols-2 gap-8 mt-12">
                 <Card className="border-accent/20 card-hover">
                   <CardHeader>
-                    <div className="flex items-center gap-4">
+                    <div className="flex items-center justify-center gap-4 mb-4">
                       <div className="p-3 rounded-full bg-accent/10">
                         <Eye className="h-6 w-6 text-accent" />
                       </div>
-                      <CardTitle className="text-xl text-primary">Vision</CardTitle>
                     </div>
+                    <CardTitle className="text-xl text-primary text-center">Vision</CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-foreground/80">
+                    <p className="text-foreground/80 text-center">
                       To become a leading enabler of sustainable growth and national value creation across Africa.
                     </p>
                   </CardContent>
@@ -202,15 +204,15 @@ const Index = () => {
                 
                 <Card className="border-accent/20 card-hover">
                   <CardHeader>
-                    <div className="flex items-center gap-4">
+                    <div className="flex items-center justify-center gap-4 mb-4">
                       <div className="p-3 rounded-full bg-accent/10">
                         <Target className="h-6 w-6 text-accent" />
                       </div>
-                      <CardTitle className="text-xl text-primary">Mission</CardTitle>
                     </div>
+                    <CardTitle className="text-xl text-primary text-center">Mission</CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-foreground/80">
+                    <p className="text-foreground/80 text-center">
                       To unlock potential by delivering innovative, scalable, and economically empowering projects for the future of Burkina Faso.
                     </p>
                   </CardContent>
