@@ -39,9 +39,11 @@ const Header = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3 hover:opacity-80 transition-opacity">
-            <div className="text-xl font-bold text-primary">
-              Promax <span className="text-accent">BF</span>
-            </div>
+            <img 
+              src="/lovable-uploads/196761c0-b662-49b1-8924-4f7320ac0c0b.png" 
+              alt="Promax BF Logo" 
+              className="h-8 w-auto"
+            />
           </Link>
 
           {/* Desktop Navigation */}
@@ -74,9 +76,11 @@ const Header = () => {
             <SheetContent side="right" className="w-[280px] sm:w-[350px]">
               <div className="flex flex-col space-y-6 mt-8">
                 <Link to="/" className="flex items-center space-x-3 pb-4 border-b">
-                  <div className="text-lg font-bold text-primary">
-                    Promax <span className="text-accent">BF</span>
-                  </div>
+                  <img 
+                    src="/lovable-uploads/196761c0-b662-49b1-8924-4f7320ac0c0b.png" 
+                    alt="Promax BF Logo" 
+                    className="h-6 w-auto"
+                  />
                 </Link>
                 {navItems.map((item) => (
                   <button 
