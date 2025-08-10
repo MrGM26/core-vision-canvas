@@ -692,9 +692,7 @@ const Index = () => {
               {/* Contact Information */}
               <div className="space-y-8">
                 <div className="fade-in-up">
-                  <h3 className="text-2xl font-bold text-white mb-6">Direct Contact</h3>
-                  <div className="space-y-6">
-                    <Card className="bg-white/10 backdrop-blur-sm border-accent/20">
+                   <Card className="bg-white/10 backdrop-blur-sm border-accent/20">
                   <CardContent className="p-6">
                     <h4 className="font-bold text-white mb-3">Office Hours</h4>
                     <p className="text-white/90 leading-relaxed text-sm mb-2">
@@ -705,6 +703,9 @@ const Index = () => {
                     </p>
                   </CardContent>
                 </Card>
+                  <h3 className="text-2xl font-bold text-white mb-6">Direct Contact</h3>
+                  <div className="space-y-6">
+                   
                     <div className="flex items-center gap-4">
                       <div className="p-3 rounded-lg bg-accent/20">
                         <MapPin className="h-6 w-6 text-accent" />
