@@ -27,8 +27,9 @@ const Header = () => {
     { label: "Who We Are", id: "who-we-are" },
     { label: "What We Do", id: "what-we-do" },
     { label: "Impact", id: "impact" },
-    { label: "Partnerships", id: "partnerships" },
+    
     { label: "Leadership", id: "leadership" },
+    { label: "Partnerships", id: "partnerships" },
     { label: "Contact", id: "contact" },
   ];
 
