@@ -486,7 +486,7 @@ const Index = () => {
                     <Card className="border-accent/20 overflow-hidden h-full shadow-lg">
                       <div className="relative h-full">
                         <img 
-                          src="https://images.unsplash.com/photo-1494790108755-2616b612b647?w=400&h=500&fit=crop&crop=face"
+                          src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=500&fit=crop&crop=face"
                           alt="Sarah Johnson"
                           className="w-full h-full object-cover"
                           style={{ aspectRatio: '4/5' }}
