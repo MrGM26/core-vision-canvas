@@ -370,13 +370,13 @@ const Index = () => {
             </div>
             
             {/* Leadership Cards Grid */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 lg:gap-7 max-w-4xl mx-auto">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-7 max-w-6xl mx-auto">
               
               {/* Alexander Reay - CEO */}
               <div className="leadership-card group fade-in-up">
                 <div className="relative h-0 pb-[125%] rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-500">
                   <img 
-                    src="/lovable-uploads/196761c0-b662-49b1-8924-4f7320ac0c0b.png"
+                    src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=500&fit=crop&crop=face"
                     alt="Alexander Reay"
                     className="absolute inset-0 w-full h-full object-cover object-[50%_15%] transition-transform duration-500 group-hover:scale-[1.03]"
                   />
@@ -422,7 +422,7 @@ const Index = () => {
               <div className="leadership-card group fade-in-up">
                 <div className="relative h-0 pb-[125%] rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-500">
                   <img 
-                    src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=500&fit=crop&crop=face"
+                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=500&fit=crop&crop=face"
                     alt="Eric Benz"
                     className="absolute inset-0 w-full h-full object-cover object-[50%_15%] transition-transform duration-500 group-hover:scale-[1.03]"
                   />
@@ -457,6 +457,52 @@ const Index = () => {
                       className="p-2 text-white hover:scale-110 transition-transform duration-200"
                       title="LinkedIn"
                       aria-label="LinkedIn profile of Eric Benz"
+                    >
+                      <Linkedin className="h-5 w-5" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              {/* Sarah Johnson - CTO */}
+              <div className="leadership-card group fade-in-up">
+                <div className="relative h-0 pb-[125%] rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-500">
+                  <img 
+                    src="https://images.unsplash.com/photo-1494790108755-2616b612b647?w=400&h=500&fit=crop&crop=face"
+                    alt="Sarah Johnson"
+                    className="absolute inset-0 w-full h-full object-cover object-[50%_15%] transition-transform duration-500 group-hover:scale-[1.03]"
+                  />
+                  
+                  {/* Bottom gradient overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#000000B3] via-transparent to-transparent" 
+                       style={{ backgroundImage: 'linear-gradient(to top, #000000B3 0%, transparent 55%)' }}>
+                  </div>
+                  
+                  {/* Text overlay */}
+                  <div className="absolute bottom-0 left-0 right-0 p-6">
+                    <h3 className="text-white font-bold uppercase text-xl mb-1 tracking-wide">
+                      MS. SARAH JOHNSON
+                    </h3>
+                    <p className="text-[#D4AF37] font-medium text-lg">
+                      Chief Technology Officer
+                    </p>
+                  </div>
+                  
+                  {/* Icons bar */}
+                  <div className="absolute bottom-6 right-6 flex gap-3 leadership-icons opacity-0 translate-x-4 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0">
+                    <button
+                      onClick={() => window.location.href = 'mailto:cto@promax-bf.com'}
+                      className="p-2 text-white hover:scale-110 transition-transform duration-200"
+                      title="Email"
+                      aria-label="Email Sarah Johnson"
+                    >
+                      <Mail className="h-5 w-5" />
+                    </button>
+                    <button
+                      onClick={() => window.open('https://www.linkedin.com/in/sarahjohnson', '_blank', 'noopener,noreferrer')}
+                      className="p-2 text-white hover:scale-110 transition-transform duration-200"
+                      title="LinkedIn"
+                      aria-label="LinkedIn profile of Sarah Johnson"
                     >
                       <Linkedin className="h-5 w-5" />
                     </button>
