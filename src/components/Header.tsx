@@ -40,7 +40,7 @@ const Header = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3 hover:opacity-80 transition-opacity">
             <img 
-              src="/lovable-uploads/81a76c91-0e72-48cc-ac9b-558049eedfd2.png" 
+              src="/lovable-uploads/403d0b0c-6664-44b5-99c5-f082863336a7.png" 
               alt="Promax BF Logo" 
               className="h-16 w-auto"
             />
@@ -77,7 +77,7 @@ const Header = () => {
               <div className="flex flex-col space-y-6 mt-8">
                 <Link to="/" className="flex items-center space-x-3 pb-4 border-b">
                   <img 
-                    src="/lovable-uploads/81a76c91-0e72-48cc-ac9b-558049eedfd2.png" 
+                    src="/lovable-uploads/403d0b0c-6664-44b5-99c5-f082863336a7.png" 
                     alt="Promax BF Logo" 
                     className="h-8 w-auto"
                   />
