@@ -712,7 +712,7 @@ const Index = () => {
                       </div>
                       <div>
                         <p className="font-semibold text-white">Location</p>
-                        <p className="text-white/90">Ouagadougou, Burkina Faso</p>
+                        <p className="text-white/90">Abu Dhabi, UAE</p>
                       </div>
                     </div>
                     <div className="flex items-center gap-4">
@@ -721,7 +721,7 @@ const Index = () => {
                       </div>
                       <div>
                         <p className="font-semibold text-white">Email</p>
-                        <p className="text-white/90">info@promax-bf.com</p>
+                        <p className="text-white/90">info@promaxbf.com</p>
                       </div>
                     </div>
                     <div className="flex items-center gap-4">
@@ -739,7 +739,7 @@ const Index = () => {
                       </div>
                       <div>
                         <p className="font-semibold text-white">Website</p>
-                        <p className="text-white/90">www.promax-bf.com</p>
+                        <p className="text-white/90">www.promaxbf.com</p>
                       </div>
                     </div>
                   </div>
