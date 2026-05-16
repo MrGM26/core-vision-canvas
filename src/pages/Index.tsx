@@ -568,10 +568,6 @@ const Index = () => {
               </p>
             </div>
 
-            <div className="fade-in-up">
-              <StrategicPartners embedded />
-            </div>
-
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div className="fade-in-up">
                 <h3 className="text-2xl font-bold text-primary mb-8">We collaborate with:</h3>
@@ -604,6 +600,10 @@ const Index = () => {
                   </CardContent>
                 </Card>
               </div>
+            </div>
+
+            <div className="mt-12 fade-in-up">
+              <StrategicPartners embedded />
             </div>
           </div>
         </div>
