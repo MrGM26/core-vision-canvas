@@ -1,12 +1,12 @@
 import promaxUnitedLogo from "@/assets/partners/promax-united-logo.jpg";
 import promaxInvestmentsLogo from "@/assets/partners/promax-investments-logo.png";
-import promaxCompliantLogo from "@/assets/partners/promax-compliant-logo.png";
+import ppiLogo from "@/assets/partners/ppi-logo.png";
 import cpibLogo from "@/assets/partners/cpib-logo.png";
 
 const partners = [
   { name: "Promax United", logo: promaxUnitedLogo },
   { name: "Promax Investments", logo: promaxInvestmentsLogo },
-  { name: "PPI — Palm Promax Investments", logo: promaxCompliantLogo },
+  { name: "PPI — Palm Promax Investments", logo: ppiLogo },
   { name: "CPIB", logo: cpibLogo },
 ];
 
