@@ -379,7 +379,7 @@ const Index = () => {
 
             {/* Investment Inquiries Banner */}
             <div className="mb-12 fade-in-up">
-              <Card className="bg-accent/10 backdrop-blur-sm border-accent/30">
+              <Card className="bg-white/10 backdrop-blur-sm border-accent/20">
                 <CardContent className="p-8">
                   <h3 className="text-2xl font-bold text-white mb-4">Investment Inquiries</h3>
                   <p className="text-white/90 leading-relaxed text-lg mb-4">
