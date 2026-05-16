@@ -4,9 +4,9 @@ import ppiLogo from "@/assets/partners/ppi-logo.png";
 import cpibLogo from "@/assets/partners/cpib-logo.png";
 
 const partners = [
-  { name: "Promax United", logo: promaxUnitedLogo, scale: 1.6 },
-  { name: "Promax Investments", logo: promaxInvestmentsLogo, scale: 1.6 },
-  { name: "PPI — Palm Promax Investments", logo: ppiLogo, scale: 1.6 },
+  { name: "Promax United", logo: promaxUnitedLogo, scale: 1.15 },
+  { name: "Promax Investments", logo: promaxInvestmentsLogo, scale: 1.15 },
+  { name: "PPI — Palm Promax Investments", logo: ppiLogo, scale: 1.15 },
   { name: "CPIB", logo: cpibLogo, scale: 1 },
 ];
 
@@ -37,7 +37,7 @@ const StrategicPartners = () => {
             {[...partners, ...partners].map((p, i) => (
               <div
                 key={`${p.name}-${i}`}
-                className="group shrink-0 w-[45vw] sm:w-[28vw] lg:w-[16vw] px-4 py-5 flex flex-col items-center justify-center gap-3"
+                className="group shrink-0 w-[55vw] sm:w-[32vw] lg:w-[20vw] px-8 py-5 flex flex-col items-center justify-center gap-3"
               >
                 <div className="h-28 md:h-32 lg:h-36 flex items-center justify-center">
                   <img
