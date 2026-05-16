@@ -568,7 +568,7 @@ const Index = () => {
               </p>
             </div>
 
-            <div className="mb-12 fade-in-up">
+            <div className="fade-in-up">
               <StrategicPartners embedded />
             </div>
 
