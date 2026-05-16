@@ -10,7 +10,37 @@ const partners = [
   { name: "CPIB", logo: cpibLogo, scale: 0.7 },
 ];
 
-const StrategicPartners = () => {
+type Props = { embedded?: boolean };
+
+const StrategicPartners = ({ embedded = false }: Props) => {
+  const Marquee = (
+    <div className="-mx-4 sm:-mx-6 overflow-hidden marquee-mask">
+      <div className="flex w-max animate-marquee">
+        {[...partners, ...partners].map((p, i) => (
+          <div
+            key={`${p.name}-${i}`}
+            className="group shrink-0 w-[55vw] sm:w-[32vw] lg:w-[20vw] px-8 py-5 flex flex-col items-center justify-center gap-3"
+          >
+            <div className="h-28 md:h-32 lg:h-36 flex items-center justify-center">
+              <img
+                src={p.logo}
+                alt={`${p.name} logo`}
+                style={{ transform: `scale(${p.scale})` }}
+                className="max-h-full w-auto object-contain transition-transform duration-500 group-hover:scale-110"
+                loading="lazy"
+              />
+            </div>
+            <span className="text-[10px] tracking-[0.2em] uppercase text-slate-500 text-center opacity-0 translate-y-1 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 ease-out">
+              {p.name}
+            </span>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+
+  if (embedded) return Marquee;
+
   return (
     <section id="strategic-partners" className="py-16 sm:py-20 bg-white border-y border-border/40">
       <div className="container mx-auto px-4 sm:px-6">
@@ -31,30 +61,7 @@ const StrategicPartners = () => {
             development.
           </p>
         </div>
-
-        <div className="-mx-4 sm:-mx-6 overflow-hidden marquee-mask">
-          <div className="flex w-max animate-marquee">
-            {[...partners, ...partners].map((p, i) => (
-              <div
-                key={`${p.name}-${i}`}
-                className="group shrink-0 w-[55vw] sm:w-[32vw] lg:w-[20vw] px-8 py-5 flex flex-col items-center justify-center gap-3"
-              >
-                <div className="h-28 md:h-32 lg:h-36 flex items-center justify-center">
-                  <img
-                    src={p.logo}
-                    alt={`${p.name} logo`}
-                    style={{ transform: `scale(${p.scale})` }}
-                    className="max-h-full w-auto object-contain transition-transform duration-500 group-hover:scale-110"
-                    loading="lazy"
-                  />
-                </div>
-                <span className="text-[10px] tracking-[0.2em] uppercase text-slate-500 text-center opacity-0 translate-y-1 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 ease-out">
-                  {p.name}
-                </span>
-              </div>
-            ))}
-          </div>
-        </div>
+        {Marquee}
       </div>
     </section>
   );
