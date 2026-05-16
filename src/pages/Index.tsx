@@ -644,7 +644,7 @@ const Index = () => {
               <Card className="border-accent/20 bg-white/10 backdrop-blur-sm">
                 <CardHeader>
                   <CardTitle className="text-2xl text-white">Get In Touch</CardTitle>
-                  <CardDescription className="text-off-white/80">
+                  <CardDescription className="text-white">
                     Send us a message and we'll respond within 24 hours
                   </CardDescription>
                 </CardHeader>
