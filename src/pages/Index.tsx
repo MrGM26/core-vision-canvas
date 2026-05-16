@@ -7,6 +7,7 @@ import { useState, useEffect } from "react";
 import { toast } from "sonner";
 import Header from "@/components/Header";
 import ScrollToTop from "@/components/ScrollToTop";
+import StrategicPartners from "@/components/StrategicPartners";
 import securityInfrastructure from "@/assets/security-infrastructure.jpg";
 import goldExploration from "@/assets/gold-exploration.jpg";
 
@@ -553,6 +554,10 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      {/* Strategic Partners Logo Marquee */}
+      <StrategicPartners />
+
       {/* Partnerships */}
       <section id="partnerships" className="py-8 bg-muted/30">
         <div className="container mx-auto px-4 sm:px-6">
