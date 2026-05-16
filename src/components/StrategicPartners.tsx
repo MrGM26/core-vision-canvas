@@ -4,10 +4,10 @@ import ppiLogo from "@/assets/partners/ppi-logo.png";
 import cpibLogo from "@/assets/partners/cpib-logo.png";
 
 const partners = [
-  { name: "Promax United", logo: promaxUnitedLogo },
-  { name: "Promax Investments", logo: promaxInvestmentsLogo },
-  { name: "PPI — Palm Promax Investments", logo: ppiLogo },
-  { name: "CPIB", logo: cpibLogo },
+  { name: "Promax United", logo: promaxUnitedLogo, scale: 1.6 },
+  { name: "Promax Investments", logo: promaxInvestmentsLogo, scale: 1.6 },
+  { name: "PPI — Palm Promax Investments", logo: ppiLogo, scale: 1.6 },
+  { name: "CPIB", logo: cpibLogo, scale: 1 },
 ];
 
 const StrategicPartners = () => {
