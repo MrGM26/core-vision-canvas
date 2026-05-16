@@ -644,7 +644,7 @@ const Index = () => {
               <Card className="border-accent/20 bg-white/10 backdrop-blur-sm">
                 <CardHeader>
                   <CardTitle className="text-2xl text-white">Get In Touch</CardTitle>
-                  <CardDescription className="text-off-white/80">
+                  <CardDescription className="text-white">
                     Send us a message and we'll respond within 24 hours
                   </CardDescription>
                 </CardHeader>
@@ -718,7 +718,7 @@ const Index = () => {
                       </div>
                       <div>
                         <p className="font-semibold text-white">Location</p>
-                        <p className="text-white/90">Abu Dhabi, UAE</p>
+                        <p className="text-white/90">Abu Dhabi, Ouagadougou</p>
                       </div>
                     </div>
                     <div className="flex items-center gap-4">
@@ -736,7 +736,7 @@ const Index = () => {
                       </div>
                       <div>
                         <p className="font-semibold text-white">Phone</p>
-                        <p className="text-white/90">+226 XXX XXX XXX</p>
+                        <a href="tel:+971566010848" className="text-white/90 hover:text-accent transition-colors">+971 56 601 0848</a>
                       </div>
                     </div>
                     <div className="flex items-center gap-4">
@@ -744,8 +744,15 @@ const Index = () => {
                         <ExternalLink className="h-6 w-6 text-accent" />
                       </div>
                       <div>
-                        <p className="font-semibold text-white">Website</p>
-                        <p className="text-white/90">www.promaxbf.com</p>
+                        <p className="font-semibold text-white">WhatsApp</p>
+                        <a
+                          href="https://wa.me/971566010848"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-white/90 hover:text-accent transition-colors"
+                        >
+                          +971 56 601 0848
+                        </a>
                       </div>
                     </div>
                   </div>
