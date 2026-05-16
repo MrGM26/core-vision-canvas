@@ -28,7 +28,7 @@ const Header = () => {
     { label: "Our Impact", id: "what-we-do" },
     { label: "Shaping Tomorrow", id: "impact" },
     
-    { label: "Leadership", id: "leadership" },
+    
     { label: "Partnerships", id: "partnerships" },
     { label: "Contact", id: "contact" },
   ];
