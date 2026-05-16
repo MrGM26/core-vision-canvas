@@ -11,9 +11,6 @@ const partners = [
   { name: "Promax Investments", logo: promaxInvestmentsLogo },
   { name: "PPI — Palm Promax Investments", logo: promaxCompliantLogo },
   { name: "CPIB", logo: cpibLogo },
-  { name: "ADIFC", logo: adifcLogo },
-  { name: "Promax Easy Pay", logo: promaxEasyPayLogo },
-  { name: "AACID", logo: aacidLogo },
 ];
 
 const StrategicPartners = () => {
