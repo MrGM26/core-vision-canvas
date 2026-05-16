@@ -4,10 +4,10 @@ import ppiLogo from "@/assets/partners/ppi-logo.png";
 import cpibLogo from "@/assets/partners/cpib-logo.png";
 
 const partners = [
-  { name: "Promax United", logo: promaxUnitedLogo },
-  { name: "Promax Investments", logo: promaxInvestmentsLogo },
-  { name: "PPI — Palm Promax Investments", logo: ppiLogo },
-  { name: "CPIB", logo: cpibLogo },
+  { name: "Promax United", logo: promaxUnitedLogo, scale: 1.6 },
+  { name: "Promax Investments", logo: promaxInvestmentsLogo, scale: 1.6 },
+  { name: "PPI — Palm Promax Investments", logo: ppiLogo, scale: 1.6 },
+  { name: "CPIB", logo: cpibLogo, scale: 1 },
 ];
 
 const StrategicPartners = () => {
@@ -39,11 +39,12 @@ const StrategicPartners = () => {
                 key={`${p.name}-${i}`}
                 className="group shrink-0 w-[45vw] sm:w-[28vw] lg:w-[16vw] px-4 py-5 flex flex-col items-center justify-center gap-3"
               >
-                <div className="h-20 md:h-24 lg:h-28 flex items-center justify-center">
+                <div className="h-28 md:h-32 lg:h-36 flex items-center justify-center">
                   <img
                     src={p.logo}
                     alt={`${p.name} logo`}
-                    className="max-h-full w-auto object-contain transition-transform duration-500 group-hover:scale-105"
+                    style={{ transform: `scale(${p.scale})` }}
+                    className="max-h-full w-auto object-contain transition-transform duration-500 group-hover:scale-110"
                     loading="lazy"
                   />
                 </div>
