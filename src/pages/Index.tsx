@@ -718,7 +718,7 @@ const Index = () => {
                       </div>
                       <div>
                         <p className="font-semibold text-white">Location</p>
-                        <p className="text-white/90">Abu Dhabi, UAE</p>
+                        <p className="text-white/90">Abu Dhabi, Ouagadougou</p>
                       </div>
                     </div>
                     <div className="flex items-center gap-4">
