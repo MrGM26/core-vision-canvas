@@ -1,10 +1,7 @@
 import promaxUnitedLogo from "@/assets/partners/promax-united-logo.jpg";
 import promaxInvestmentsLogo from "@/assets/partners/promax-investments-logo.png";
-import promaxEasyPayLogo from "@/assets/partners/promax-easy-pay-logo.jpg";
 import promaxCompliantLogo from "@/assets/partners/promax-compliant-logo.png";
 import cpibLogo from "@/assets/partners/cpib-logo.png";
-import adifcLogo from "@/assets/partners/adifc-logo.png";
-import aacidLogo from "@/assets/partners/aacid-logo.png";
 
 const partners = [
   { name: "Promax United", logo: promaxUnitedLogo },
