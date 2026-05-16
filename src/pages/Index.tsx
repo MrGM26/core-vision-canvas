@@ -619,7 +619,7 @@ const Index = () => {
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6">
                 Contact Us
               </h2>
-              <p className="text-xl text-off-white/90 max-w-3xl mx-auto">
+              <p className="text-xl text-white max-w-3xl mx-auto">
                 Ready to explore partnership opportunities? We'd love to hear from you.
               </p>
             </div>
