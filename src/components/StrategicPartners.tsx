@@ -1,4 +1,4 @@
-import promaxUnitedLogo from "@/assets/partners/promax-united-logo.jpg";
+import promaxUnitedLogo from "@/assets/partners/promax-united-logo.png";
 import promaxInvestmentsLogo from "@/assets/partners/promax-investments-logo.png";
 import ppiLogo from "@/assets/partners/ppi-logo.png";
 import cpibLogo from "@/assets/partners/cpib-logo.png";
