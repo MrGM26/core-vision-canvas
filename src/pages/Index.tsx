@@ -492,7 +492,7 @@ const Index = () => {
                       </div>
                       <div>
                         <p className="font-semibold text-white">Location</p>
-                        <p className="text-white/90">Abu Dhabi and Ouagadougou, Burkina Faso</p>
+                        <p className="text-white/90">Abu Dhabi, UAE and Ouagadougou, Burkina Faso</p>
                       </div>
                     </div>
                     <div className="flex items-center gap-4">
